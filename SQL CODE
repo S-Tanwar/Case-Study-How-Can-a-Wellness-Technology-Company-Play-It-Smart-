@@ -1,0 +1,88 @@
+----Viewing the tables
+SELECT *
+FROM dailyActivity_merged_2;
+
+SELECT *
+FROM hourlySteps_merged_2;
+
+SELECT *
+FROM sleepDay_merged_2;
+
+SELECT *
+FROM hourlyIntensities_merged_2;
+
+----- Average steps taken by the participants
+SELECT 
+  COUNT(*) AS count,
+  AVG(TotalSteps) AS avg_total_steps,
+  AVG(TotalDistance) AS avg_total_distance,
+  AVG(SedentaryMinutes) AS avg_sedentary_minutes,
+  AVG(Calories) AS avg_calories,
+  MIN(TotalSteps) AS min_total_steps,
+  MIN(TotalDistance) AS min_total_distance,
+  MIN(SedentaryMinutes) AS min_sedentary_minutes,
+  MIN(Calories) AS min_calories,
+  MAX(TotalSteps) AS max_total_steps,
+  MAX(TotalDistance) AS max_total_distance,
+  MAX(SedentaryMinutes) AS max_sedentary_minutes,
+  MAX(Calories) AS max_calories
+FROM dailyActivity_merged_2;
+
+----- average active time of participants
+SELECT 
+  COUNT(*) AS count,
+  AVG(VeryActiveMinutes) AS avg_very_active_minutes,
+  AVG(FairlyActiveMinutes) AS avg_fairly_active_minutes,
+  AVG(LightlyActiveMinutes) AS avg_lightly_active_minutes,
+  MIN(VeryActiveMinutes) AS min_very_active_minutes,
+  MIN(FairlyActiveMinutes) AS min_fairly_active_minutes,
+  MIN(LightlyActiveMinutes) AS min_lightly_active_minutes,
+  MAX(VeryActiveMinutes) AS max_very_active_minutes,
+  MAX(FairlyActiveMinutes) AS max_fairly_active_minutes,
+  MAX(LightlyActiveMinutes) AS max_lightly_active_minutes
+FROM dailyActivity_merged_2;
+
+----average sleep time of the participants
+SELECT 
+  COUNT(*) AS count,
+  AVG(TotalSleepRecords) AS avg_total_sleep_records,
+  AVG(TotalMinutesAsleep) AS avg_total_minutes_asleep,
+  AVG(TotalTimeInBed) AS avg_total_time_in_bed,
+  MIN(TotalSleepRecords) AS min_total_sleep_records,
+  MIN(TotalMinutesAsleep) AS min_total_minutes_asleep,
+  MIN(TotalTimeInBed) AS min_total_time_in_bed,
+  MAX(TotalSleepRecords) AS max_total_sleep_records,
+  MAX(TotalMinutesAsleep) AS max_total_minutes_asleep,
+  MAX(TotalTimeInBed) AS max_total_time_in_bed
+FROM sleepDay_merged_2;
+
+----Combining the tables into one
+SELECT s.Id AS SleepId, s.SleepDay AS SleepDate, s.TotalSleepRecords, s.TotalMinutesAsleep, s.TotalTimeInBed,
+       a.Id AS ActivityId, a.ActivityDate AS ActivityDate, a.TotalSteps, a.TotalDistance, a.SedentaryMinutes, a.Calories
+INTO merged_data
+FROM sleepDay_merged_2 s
+INNER JOIN dailyActivity_merged_2 a ON s.Id = a.Id AND s.SleepDay = a.ActivityDate;
+
+SELECT *
+FROM merged_data;
+
+
+--- Finding out the relation between calories and Activities
+SELECT TotalSteps, Calories
+FROM merged_data
+ORDER BY TotalSteps ASC;
+
+--- Finding out about the relation between total
+SELECT TotalMinutesAsleep, TotalTimeInBed
+FROM merged_data
+ORDER BY TotalMinutesAsleep;
+
+---- HOURS VS INTENSITY
+SELECT DISTINCT(ActivityHour), TotalIntensity
+FROM hourlyIntensities_merged_2
+ORDER BY ActivityHour ASC;
+
+--- sleep vs sedentary
+SELECT TotalMinutesAsleep, SedentaryMinutes
+From merged_data
+ORDER BY TotalMinutesAsleep;
