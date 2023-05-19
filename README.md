@@ -11,7 +11,12 @@ In this project, I have downloaded the data set from kaggle. Which used to answe
 3. How could these trends help influence Bellabeat marketing strategy?
 
 ## My Findings
-1)
+1) The more steps users take, the greater the number of calories burned
 ![image](https://github.com/S-Tanwar/Case-Study-How-Can-a-Wellness-Technology-Company-Play-It-Smart-/assets/95356553/2b193655-5646-4e77-bcb0-ea3dbcd75e60)
 
+2) Users were most active between 5PM and 6PM
+![image](https://github.com/S-Tanwar/Case-Study-How-Can-a-Wellness-Technology-Company-Play-It-Smart-/assets/95356553/a40e05fc-0ad5-4cce-94e3-25565c35c4de)
+
+3)
+![image](https://github.com/S-Tanwar/Case-Study-How-Can-a-Wellness-Technology-Company-Play-It-Smart-/assets/95356553/2b4c8335-a468-424a-bfc0-fd3657a84471)
 
