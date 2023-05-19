@@ -17,6 +17,6 @@ In this project, I have downloaded the data set from kaggle. Which used to answe
 2) Users were most active between 5PM and 6PM
 ![image](https://github.com/S-Tanwar/Case-Study-How-Can-a-Wellness-Technology-Company-Play-It-Smart-/assets/95356553/a40e05fc-0ad5-4cce-94e3-25565c35c4de)
 
-3)
+3) 
 ![image](https://github.com/S-Tanwar/Case-Study-How-Can-a-Wellness-Technology-Company-Play-It-Smart-/assets/95356553/2b4c8335-a468-424a-bfc0-fd3657a84471)
 
