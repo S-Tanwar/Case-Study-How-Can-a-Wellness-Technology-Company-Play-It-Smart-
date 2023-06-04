@@ -2,11 +2,11 @@
 This project is the part of Google analytics course.
 
 ## What is Bellabeat?
-Bellabeat is a pioneering high-tech manufacturer dedicated to developing health-focused products specifically designed for women. With a firm belief in the potential of technology to empower women in their pursuit of well-being, Bellabeat aims to revolutionize the way women approach their health and fitness goals.
+Bellabeat, founded by Urška Sršen and Sando Mur in 2013, is a tech-driven wellness company that designs and manufactures health-focused smart products for women. By leveraging technology and data, Bellabeat empowers women with knowledge about their health and habits. The beautifully designed products collect data on activity, sleep, stress, and reproductive health, providing valuable insights into overall well-being. Bellabeat has positioned itself as a global leader in the smart device market, experiencing rapid growth since its inception.
 
 ## This Project
 In this project, I have downloaded the data set from kaggle(FitBit Fitness Tracker). Which used to answer the following questions.
-What are some trends in smart device usage?
+1) What are some trends in smart device usage?\ 2)How could these trends apply to Bellabeat customers?\ 3)How could these trends help influence Bellabeat marketing strategy? 
 
 ## My Findings
 1) Average user takes 7673 steps, travels 5.5 KM and burns 2303 calories.
