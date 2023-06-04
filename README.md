@@ -6,7 +6,7 @@ Bellabeat, founded by Urška Sršen and Sando Mur in 2013, is a tech-driven well
 
 ## This Project
 In this project, I have downloaded the data set from kaggle(FitBit Fitness Tracker). Which used to answer the following questions.
-1) What are some trends in smart device usage? < br > 2)How could these trends apply to Bellabeat customers?< br > 3)How could these trends help influence Bellabeat marketing strategy? 
+1) What are some trends in smart device usage?(<br>) 2)How could these trends apply to Bellabeat customers?(<br>) 3)How could these trends help influence Bellabeat marketing strategy? 
 
 ## My Findings
 1) Average user takes 7673 steps, travels 5.5 KM and burns 2303 calories.
