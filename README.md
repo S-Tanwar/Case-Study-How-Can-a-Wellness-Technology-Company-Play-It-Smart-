@@ -42,3 +42,5 @@ Now that we have established key trends in smart device usage, it's crucial to e
 3) Sleep Health Awareness: Educate users about the relationship between sedentary behavior and sleep quality. Position Bellabeat as a holistic wellness brand that promotes an active lifestyle for better sleep.
 4) Personalized Recommendations: Leverage available data to provide personalized recommendations to users based on their activity levels, step counts, and sleep patterns. Enhance the user experience and foster brand loyalty.
 5) Social Media Engagement: Continue investing in social media marketing to share success stories, tips, and inspirational content. Build a community of like-minded individuals and increase user engagement.
+
+Medium Link: https://medium.com/@shivanitanwar510/case-study-how-can-a-wellness-company-bellabeat-play-it-smart-b358283ac1a6
